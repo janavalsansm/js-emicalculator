@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1 style="color: black;margin-bottom: 40px;">EMI CALCULATOR</h1>
+           
+                <div>
+                    <label for="">Amount (₹) :</label>
+                    <input id="amount" type="number">
+                </div>
+                <div>
+                    <label for="">Interest Rate :</label>
+                    <input id="rate" type="number">
+                </div>
+                <div>
+                    <label for="">Month to pay :</label>
+                    <input id="month" type="number">
+                </div>
+                <div style="text-align: center;">
+                    <button type="button" onclick="emicalculater()">Calculate</button>
+                </div>
+                
+                    <p id="emivalue"></p>
+                
+           
+        </div>
+    </div>
+
+    <script>
+        function emicalculater(){
+            const amount = document.getElementById("amount").value;
+            const rate = document.getElementsByid("rate").value;
+            const months = document.getElementById("month").value;
+
+            const interest = (amount * (rate * (0.01)) / months);
+
+            const total = ((amount / months) + interest).toFixed(2);
+ 
+            document.getElementById("emivalue").innerHTML = "EMI : (₹)" + total;
+        
+        } 
+
+        
+
+    </script>
+    
+</body>
+</html>
