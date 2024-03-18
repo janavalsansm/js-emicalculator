@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
     color: white;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 .calculator{
     background-color: rgba(251, 247, 247, 0.34);
@@ -22,8 +22,8 @@
     text-align: left;
     padding-left: 20px; 
     padding-right: 20px;
-    padding-top: 20px; 
-    padding-bottom: 20px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
 }
 .calculator input{
     width: 300px;
@@ -47,8 +47,10 @@
     border: none;
     background-color:rgb(3, 223, 149);
     font-weight: bolder;
+    margin-bottom: 5px;
 
 }
+
 .calculator button:hover{
     background-color: rgb(3, 167, 3);
 }
